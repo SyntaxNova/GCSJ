@@ -1,0 +1,74 @@
+to create database
+	create database database_name ;
+
+to delete database
+	drop database database_name ;
+
+to know which database is selected 
+	select database ();
+
+to select database on which we have to work
+	use database_name ;
+
+int is used to take + - numbers but not decimal
+
+float is used to store decimal numbers float(2,1)
+this means total two digits are accepted and after decimal one digit is allowed.
+
+varchar(n) is used take text input, n is how many text unit can be taken.
+
+enum datatype is the which accepts only yes, no ,true, false inputs. enum is assigned to attributes.
+
+constaints are used set rules for data in table and are optional.
+it consists of not null, unique key, primary key, foreign key.
+
+not null i.e. value in colume cannot be empty.
+
+unique key means it should be unique not same or repeated.
+
+primary key is used to uniquely identify row in a table.
+it automatically makes it not null and unique key.
+
+show tables;
+
+create table table_name(attributes of table with datatypes);
+	e.g. create table students(
+		s_no int not null auto increment,
+		name varchar(255) not null,
+		no_compartments int not null default 0,
+		primary key(s_no) )
+
+alter table table_name add/drop/modify/change/rename to
+
+alter table table_name add atrribute data-type constaints default value	 | adding column/attribute
+alter table table_name drop atrribute data-type constaints default value | deleting column/attribute
+alter table table_name modify atrribute data-type constaints default value | modifying column/attribute
+alter table table_name rename to new_name | renaming table
+
+
+insert into table_name (atrribute1 ,atrribute2 ,atrribute3  ) values (value1, value2, value3)  | adding table records ,in values if varchar then write it in ""
+
+select atrribute from table_name ;  | fetching a specific 
+select * from table_name ;  | fetching a all
+select atrribute from table_name where atrribute operator value ;  | filter
+	operator [  = ,		!=(not equal to),	 < ,	 >,	 <=,	 >=,	  ]
+we can apply two conditions by and/or operator. syntax: { condition1 and/or condition2 }
+
+select * from table_name order by attribute ASC ;  | fetching in asecding order
+
+UPDATE table_name SET
+attribute1 = value,
+attribute2 = value
+WHERE s_no = 2; 				| updating record number 2 
+
+
+delete from table_name where s_no=2 ; 	| deleting record no 2
+
+foreign key (atrribute) referece table_name (atrribute); | here table name refers to which table we have to connect 
+
+
+
+
+
+M4T7v1-completed!
+
