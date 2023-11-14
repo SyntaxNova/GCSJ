@@ -1,0 +1,24 @@
+Apache commands
+    start :  sudo service apache2 start
+    stop :   sudo service apache2 stop
+    status : sudo service apache2 status
+    restart: sudo service apache2 restart
+
+
+TO START AND END MYSQL 
+
+sudo service mysql start/stop
+pass = qwerty@123
+mysql -u root -p
+flush privileges ;
+quit ;
+
+sudo service apache2 start
+
+Syntax for export dtabase:
+mysqldump -u root -p database_name > database_name.sql
+
+Syntax for import dtabase:
+mysqldump -u root -p database_name < backup_filename.sql
+
+ls
